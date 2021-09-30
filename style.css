@@ -1,0 +1,231 @@
+* {
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+body {
+    width: 90%;
+}
+
+header {
+    width: 100%;
+    display: flex;
+}
+
+footer {
+    width: 90%;
+    margin-left: 115px;
+    padding-bottom: 2em;
+}
+
+h1 {
+    font-size: 1.75em;
+    font-weight: 500;
+    margin-top: 35px;
+}
+
+h2 {
+    font-size: 1em;
+    font-weight: 600;
+    margin-bottom: 0;
+}
+
+h3 {
+    font-size: 1em;
+    font-weight: 300;
+    margin-top: 5px;
+}
+
+h4 {
+    font-size: 0.875em;
+    font-weight: 300;
+}
+
+h5 {
+    font-size: 1em;
+    font-weight: 600;
+    margin-top: 2em;
+    margin-bottom: 0;
+}
+
+h6 {
+    font-size: 1em;
+    font-weight: 300;
+    margin-top: 1em;
+    margin-bottom: 0;
+    line-height: 25px;
+}
+
+p {
+    font-size: 1em;
+    font-weight: 300;
+    margin-top: 30px;
+    margin-bottom: 0;
+    line-height: 25px;
+}
+
+.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: rgba(80, 110, 170, 0.85);
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 1.75em;
+    color: #c0c0c0;
+    display: block;
+    transition: 0.3s;
+}
+
+.overlay a:hover,
+.overlay a:focus {
+    color: #f1f1f1;
+}
+
+.overlay .closebtn {
+    position: absolute;
+    top: 15px;
+    right: 45px;
+    font-size: 60px;
+}
+
+.content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.menubar {
+    font-size: 32px;
+    padding: 30px 45px;
+    cursor: pointer;
+}
+
+.description {
+    width: 90%;
+    margin-left: 115px;
+    margin-bottom: 10px;
+}
+
+.solid {
+    margin-top: 12px;
+}
+
+.map {
+    width: 90%;
+    margin-left: 115px;
+}
+
+.image {
+    width: 100%;
+}
+
+.buttonbox {
+    text-align: center;
+    padding-bottom: 15px;
+}
+
+.button {
+    width: 2.5em;
+    height: 2.5em;
+    margin: 0 10px;
+    padding-left: 9px;
+    padding-bottom: 2px;
+    border: none;
+    background-color: #f1f1f1;
+}
+
+.button:hover {
+    cursor: pointer;
+    background-color: rgba(80, 110, 170, 0.7);
+}
+
+.databox {
+    width: 100%;
+    text-align: center;
+    margin-left: 115px;
+    margin-top: 10px;
+    padding-bottom: 30px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.databox .data {
+    width: 30%;
+}
+
+.faq {
+    width: 90%;
+    margin-left: 115px;
+    padding-bottom: 2em;
+}
+
+@media (max-width: 600px) {
+    header {
+        display: inline-block;
+        width: 483px;
+        text-align: center;
+    }
+    footer {
+        width: 483px;
+        margin: 0;
+        text-align: center;
+    }
+    h1 {
+        margin: 0;
+        padding-bottom: 30px;
+        padding-top: 30px;
+    }
+    h5 {
+        margin-top: 0;
+    }
+    h6 {
+        margin-bottom: 2em;
+    }
+    .overlay a {
+        font-size: 1.5em;
+    }
+    .overlay .closebtn {
+        top: 52px;
+        right: 45px;
+    }
+    .description {
+        width: 483px;
+        margin: 0;
+        padding-bottom: 15px;
+        text-align: center;
+    }
+    .map {
+        width: 483px;
+        margin: 0;
+        padding-bottom: 5px;
+        text-align: center;
+    }
+    .button {
+        margin: 0 5px;
+    }
+    .databox {
+        width: 483px;
+        margin: 0;
+        padding-bottom: 40px;
+    }
+    .databox .data {
+        width: 483px;
+        margin: 0;
+    }
+    .faq {
+        width: 483px;
+        margin: 0;
+        text-align: center;
+        padding-bottom: 0.4em;
+    }
+}
